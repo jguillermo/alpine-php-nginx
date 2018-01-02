@@ -1,0 +1,17 @@
+version: '2'
+services:
+
+  php-base:
+      image: jguillermo/alpine-php:base
+      build:
+        context: ./docker/php-base/
+
+  php-cli:
+      image: jguillermo/alpine-php:cli
+      build:
+        context: ./docker/php-cli/
+
+  php-nginx:
+      image: jguillermo/alpine-php:nginx
+      build:
+        context: ./docker/php-nginx/
